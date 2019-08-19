@@ -1,4 +1,4 @@
-# html5-navigation-menu
+# idetailaid-html5-navigation-menu
 An example of creating an HTML 5 menu, that exposes custom events to the iDetailAid user interface
 
 See https://docs.idetailaid.co.uk/dev-docs/html-packages/#exposing-events-actions-to-the-idetailaid-user-interface for more information
