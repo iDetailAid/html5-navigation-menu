@@ -1,0 +1,17 @@
+{
+  "events":[
+    {
+      "type":"openOverlay", 
+      "name": "Open Overlay"
+    },
+    { 
+      "type":"openSlide", 
+      "name":"Open Slide"
+    },
+    {
+      "type":"navigateLeft", 
+      "name":"Navigate Left"
+    }
+  ]
+}
+
