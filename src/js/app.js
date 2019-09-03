@@ -18,27 +18,28 @@
 
 $ = document.getElementById.bind(document);
 
-// The window.ida object is injected when run inside the iDetailAid Viewer.
-// We stub this out here so we can run locally outside of iDetailAid for testing
-if( !window.ida ) {
-  window.ida = {iframe:{trigger: (eventName) => console.log(`call ida.iframe.trigger('${eventName}')`)}};
-}
-
-
 window.addEventListener('load', () => {
 
+  $('burger-menu').addEventListener('click', (event) => {
+    $('menu').classList.toggle('open');
+  });
+  
+
   $('buttonA').addEventListener('click', (event) => {
-    //pass event on to ida
+    // pass event on to ida
     // see the file at /manifest.json on how to expose this event to the iDA user interface
     ida.iframe.trigger('openOverlay');
+    $('menu').classList.remove('open')
   });
     
   $('buttonB').addEventListener('click', (event) => {
     ida.iframe.trigger('openSlide');
+    $('menu').classList.remove('open')
   });
     
   $('buttonC').addEventListener('click', (event) => {
     ida.iframe.trigger('navigateLeft');
+    $('menu').classList.remove('open')
   });
 
 });

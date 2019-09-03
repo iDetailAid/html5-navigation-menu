@@ -23,19 +23,30 @@
 <head>
   <meta charset="utf-8">
   <title>Example Events HTML Package</title>
-  <link rel="stylesheet" href="css/styles.css?v=1.0">  
+  <link rel="stylesheet" href="css/styles.css">  
 </head>
 
 <body>
   
-  <div class="container">
-    <h1>Example Events</h1>
+  <!-- mark the area that we want the user to interact in -->
+  <!-- areas bot under a node with .interactive will let the pointer events fall -->
+  <!-- through to the slide content areas behind this html package --> 
+  <div id="burger-menu" class="interactive">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  
+  <div id="menu" class="interactive">
     <div class="button" id="buttonA">Button A - Open Overlay</div>
     <div class="button" id="buttonB">Button B - Open Slide</div>
     <div class="button" id="buttonC">Button C - Navigate Left</div>
-    
   </div>
 
+  <!-- inject a mock presentation manifest and a mock ida API-->
+  <!-- these an be left in when uploaded into IDA, the actual API and manifest will take precedence-->
+  <script src="js/ida/iDetailAid_viewer_mock_manifest.js"></script>
+  <script src="js/ida/iDetailAid_viewer_mock_api.js"></script>
 
   <script src="js/app.js"></script>
 

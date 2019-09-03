@@ -8,21 +8,21 @@ html, body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-	position:relative;
-	background: transparent;
-	width: 100%;
-	height:100%;
-	color: #3a6f90;
+#menu {
+	position: absolute;
+    right: -300px;
+    width: 300px;
+    height: 768px;
+    transition: right .25s ease-in-out;
+    top: 80px;
+}
 
-	padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-	margin-left: auto;
+#menu.open {
+	right: 0px;
 }
 
 
-.button{
+#menu .button{
 	Background: grey;
 	border: 1px solid black;
 	padding: 10px;
@@ -31,3 +31,27 @@ html, body {
     color: white;
     cursor: pointer;
 }
+
+#burger-menu {
+	position: absolute;
+	top:0px;
+	right:0px;
+	padding:45px 50px;;
+
+	width:35px;
+	height:25px;
+}
+
+#burger-menu div {
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+}	
+
+
+
+
+
+
+
