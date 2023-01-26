@@ -12,6 +12,66 @@
       "type":"navigateLeft", 
       "name":"Navigate Left"
     }
-  ]
+  ],
+  "custom_forms": {
+    "template": {
+      "navigation_i18n": {
+        "title": "Localisation for Navigation",
+        "description": "Enter the translations for the main navigation",
+        "fields": [
+          {
+            "name": "openOverlay",
+            "type": "text",
+            "label": "Open Overlay",
+            "description": "The label for the open overlay button"
+          },
+          {
+            "name": "openSlide",
+            "type": "text",
+            "label": "Open Slide",
+            "description": "The label for the open slide button"
+          },
+          {
+            "name": "navigateLeft",
+            "type": "text",
+            "label": "Navigate Left",
+            "description": "The label for the go left button"
+          }
+        ]
+      }
+    },
+    "slide": {
+      "navigation_settings": {
+        "title": "Navigation bar settings",
+        "description": "",
+        "fields": [
+          {
+            "name": "active_item",
+            "type": "select",
+            "label": "Active item",
+            "description": "Set which menu button is active for this slide",
+            "options": [
+              {
+                "label": "None",
+                "value": ""
+              },
+              {
+                "label": "Open Overlay",
+                "value": "openOverlay"
+              },
+              {
+                "label": "Open Slide",
+                "value": "openSlide"
+              },
+              {
+                "label": "Navigate Left",
+                "value": "navigateLeft"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
 }
 

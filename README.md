@@ -1,7 +1,11 @@
 # idetailaid-html5-navigation-menu
 An example of creating an HTML 5 menu, that exposes custom events to the iDetailAid user interface
 
-See https://docs.idetailaid.co.uk/dev-docs/html-packages/#exposing-events-actions-to-the-idetailaid-user-interface for more information
+See  
+  * https://docs.idetailaid.co.uk/html-packages
+  * https://docs.idetailaid.co.uk/html-packages/html-custom-forms
+  * https://docs.idetailaid.co.uk/html-packages/html-events
+
 
 # distribution
 To package and upload into iDetailAid, zip up the src folder, rename it as you see fit and upload it to iDetailAid.
